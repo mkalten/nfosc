@@ -1,0 +1,33 @@
+nfOSC - http://github.com/mkalten/nfosc/
+A simple utility that sends RFID tag add & remove events via OSC.
+(c) 2009-14 Martin Kaltenbrunner http://modin.yuri.at/
+
+This tool is based on the libnfc library, which allows to access several RFID reader devices, such as the affordable touchatag reader. When an RFID tag is placed onto the device, the application sends a simple OSC message to the provided UDP port. An equivalent OSC message is sent when the tag is removed. 
+
+This package includes a command line utility for Linux and MacOS X, as well as a simple GUI application for MacOS X. The source code distribution also includes make files for both platforms as well as an Xcode project for the Mac GUI.
+
+OSC message syntax:
+/nfosc/[event] int32 int32 int32 string
+
+OSC message semantics:
+/nfosc/add session_id symbol_id reader_id tag_type tag_uid
+/nfosc/del session_id symbol_id reader_id tag_type tag_uid
+
+default OSC/UDP address and port: 127.0.0.1 3333
+
+Alternatively this application can also send TUIO2 symbol messages, which can be enabled using either the -t command line switch, or by selecting the according checkbox in the GUI. Please see http://www.tuio.org/?tuio20 for further information on the upcoming revision of the TUIO protocol. 
+
+symbol database:
+the symbol_id - tag_uid relation is stored in the file nfosc.db
+new tag_uids are assigned dynamically and stored for later use
+
+this source package should compile on Linux and MacOS X
+you will need the following libraries to compile this application:
+liblo 0.28	http://liblo.sourceforge.net/
+libnfc 1.7.1	http://www.libnfc.org/
+
+to compile and install just type:
+./configure
+make
+make install
+
