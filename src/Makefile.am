@@ -1,4 +1,4 @@
-INCLUDES = $(all_includes)
+AM_CPPFLAGS = $(all_includes)
 
 AM_CFLAGS = @LIBNFC_CFLAGS@ @LIBLO_CFLAGS@
 AM_LDFLAGS = @LIBNFC_LIBS@ @LIBLO_LIBS@
