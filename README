@@ -31,7 +31,7 @@ liblo 0.28	http://liblo.sourceforge.net/
 libnfc 1.7.1	http://www.libnfc.org/
 
 to compile and install just type:
-./autogen.sh
+./configure
 make
 make install
 

@@ -8,8 +8,6 @@ nfosc.db
 
 *.in
 
-configure
-
 config.*
 
 depcomp
