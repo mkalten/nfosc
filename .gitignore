@@ -6,4 +6,16 @@ xcuserdata
 
 nfosc.db
 
+*.in
 
+configure
+
+config.*
+
+depcomp
+
+ltmain.sh
+
+install-sh
+
+compile
