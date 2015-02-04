@@ -21,3 +21,5 @@ install-sh
 compile
 
 build.sh
+
+aclocal.m4
