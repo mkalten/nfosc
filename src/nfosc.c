@@ -1,7 +1,7 @@
 /**
  * nfosc - an OSC utility for libnfc
  *
- * Copyright (C) 2009-2014, Martin Kaltenbrunner <martin@tuio.org>
+ * Copyright (C) 2009-2015 Martin Kaltenbrunner <martin@tuio.org>
  *
  * This program is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the Free
@@ -458,7 +458,7 @@ void nfosc_start() {
     buffer_size = 0;
     
     // try to open the NFC device
-    printf("nfOSC v0.4 using libnfc v%s\n", nfc_version());
+    printf("nfOSC v0.5 using libnfc v%s\n", nfc_version());
     printf("looking for NFC devices ...\n");
     fflush(stdout);
     

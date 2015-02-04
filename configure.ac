@@ -1,5 +1,5 @@
 define([rev], esyscmd([sh -c "svnversion -n"]))dnl
-AC_INIT(nfosc, 0.4+rev, modin@yuri.at)
+AC_INIT(nfosc, 0.5+rev, modin@yuri.at)
 
 AC_CONFIG_HEADER(config.h)
 AM_INIT_AUTOMAKE

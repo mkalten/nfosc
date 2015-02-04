@@ -1,6 +1,6 @@
 nfOSC - http://github.com/mkalten/nfosc/
 A simple utility that sends RFID tag add & remove events via TUIO/OSC.
-(c) 2009-14 Martin Kaltenbrunner http://modin.yuri.at/
+(c) 2009-15 Martin Kaltenbrunner http://modin.yuri.at/
 
 This tool is based on the libnfc library, which allows to access one or multiple USB RFID reader devices. When  an RFID tag is  placed onto the 
 device, the application sends a simple /nfosc/add message to the provided UDP port. An equivalent /nfosc/del message is sent when the tag is removed. 

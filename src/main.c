@@ -1,7 +1,7 @@
 /**
  * nfosc - an OSC utility for libnfc
  *
- * Copyright (C) 2009-14, Martin Kaltenbrunner <martin@tuio.org>
+ * Copyright (C) 2009-15 Martin Kaltenbrunner <martin@tuio.org>
  * 
  * This program is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the Free
