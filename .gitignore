@@ -25,3 +25,11 @@ build.sh
 aclocal.m4
 
 missing
+
+Makefile
+
+*.o
+
+xcshareddata
+
+nfosc
